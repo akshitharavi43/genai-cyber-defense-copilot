@@ -159,6 +159,11 @@ Recommended Response:
 - Conduct forensic investigation
 
 
+## Dashboard Preview
+
+![dashboard](https://github.com/user-attachments/assets/8e639997-d6a1-485f-9a28-913ac3491051)
+
+
 ## Use Cases
 
 SOC automation  
@@ -166,6 +171,16 @@ Threat analysis assistance
 Security posture auditing  
 Incident response planning  
 Cybersecurity research
+
+
+## Security Concepts Demonstrated
+
+Security posture assessment
+Malware behavior analysis
+Incident response automation
+Threat correlation and attack chain reconstruction
+Risk scoring and prioritization
+MITRE ATT&CK mapping
 
 
 ## Future Improvements
@@ -181,3 +196,6 @@ Automated response playbooks
 
 Akshitha Ravi  
 Cybersecurity & AI Enthusiast
+```bash
+https://github.com/akshitharavi43
+```
