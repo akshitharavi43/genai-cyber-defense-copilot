@@ -92,30 +92,45 @@ spaCy (NLP processing)
 
 Clone the repository:
 
+```bash
 git clone https://github.com/akshitharavi43/genai-cyber-defense-copilot.git
 cd genai-cyber-defense-copilot
-
+```
 Create virtual environment:
 
+```bash
 python -m venv venv
+```
 
 Activate environment:
 
-Windows
+### Windows
+```bash
 venv\Scripts\activate
+```
+### macOS / Linux
+```bash
+source venv/bin/activate
+```
 
 Install dependencies:
 
+```bash
 pip install -r requirements.txt
-
+```
 
 ## Running the Dashboard
 
 Start the Streamlit dashboard:
 
+```bash
 streamlit run ui/dashboard.py
-Then open:
+```
+Open your browser and go to:
+
+```
 http://localhost:8501
+```
 
 
 
