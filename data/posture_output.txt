@@ -1,0 +1,17 @@
+Finding 1:
+Risk: High
+Issue: IAM admin role assigned to all users
+Impact: Excessive privileges may allow unauthorized access and privilege abuse
+Fix: Restrict admin access using least privilege
+
+Finding 2:
+Risk: High
+Issue: Firewall port 3389 exposed to 0.0.0.0/0
+Impact: Remote desktop service is exposed to internet-based brute-force attacks
+Fix: Restrict RDP access to trusted IPs or use a VPN
+
+Finding 3:
+Risk: High
+Issue: Storage bucket has public access enabled
+Impact: Sensitive data may be exposed to unauthorized users
+Fix: Disable public access and enforce strict access policies

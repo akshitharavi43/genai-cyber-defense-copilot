@@ -1,0 +1,15 @@
+[
+  {
+    "time": "01:02",
+    "event": "Suspicious file download",
+    "user": "john"
+  },
+  {
+    "time": "01:05",
+    "event": "Privilege escalation detected"
+  },
+  {
+    "time": "01:07",
+    "event": "Lateral movement activity"
+  }
+]

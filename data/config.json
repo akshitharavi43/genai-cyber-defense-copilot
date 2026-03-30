@@ -1,0 +1,14 @@
+{
+  "iam_role": "admin",
+  "assigned_to": "all_users",
+  "permissions": "*",
+  "firewall_rule": {
+    "port": 3389,
+    "source": "0.0.0.0/0",
+    "protocol": "TCP"
+  },
+  "storage": {
+    "bucket_name": "company-data",
+    "public_access": true
+  }
+}

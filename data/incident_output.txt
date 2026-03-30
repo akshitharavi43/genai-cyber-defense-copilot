@@ -1,0 +1,16 @@
+Incident Type:
+Lateral Movement Attack
+
+Timeline:
+01:02 - Suspicious file download
+01:05 - Privilege escalation detected
+01:07 - Lateral movement activity
+
+Risk Score:
+High (9/10)
+
+Recommended Actions:
+Isolate host
+Disable affected user account
+Scan internal systems for spread
+Collect forensic evidence
