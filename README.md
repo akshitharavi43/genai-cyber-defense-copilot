@@ -25,23 +25,59 @@ Interactive Streamlit dashboard to visualize analysis results.
 
 ## Architecture
 
-Logs / Configs / Alerts
-        │
-        ▼
-   Data Parsers
-        │
-        ▼
-AI Modules
-  • Posture Analyzer
-  • Malware Explainer
-  • Incident Commander
-        │
-        ▼
-Unified Reasoning Engine
-        │
-        ▼
-Streamlit SOC Dashboard
+## System Architecture
 
+```text
+                 ┌──────────────────────┐
+                 │   Security Inputs    │
+                 │──────────────────────│
+                 │ • System Configs     │
+                 │ • Process Logs       │
+                 │ • SIEM Alerts        │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │      Data Parsers    │
+                 │──────────────────────│
+                 │ Normalize & Extract  │
+                 │ key fields from logs │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │      AI Modules      │
+                 │──────────────────────│
+                 │ • Posture Analyzer   │
+                 │ • Malware Explainer  │
+                 │ • Incident Commander │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ Unified Reasoning AI │
+                 │──────────────────────│
+                 │ Correlates security  │
+                 │ findings to identify │
+                 │ attack root causes   │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │  Risk Scoring Engine │
+                 │──────────────────────│
+                 │ Calculates threat    │
+                 │ severity & priority  │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │  Streamlit Dashboard │
+                 │──────────────────────│
+                 │ SOC visualization    │
+                 │ investigation output │
+                 └──────────────────────┘
+```
 
 ## Technologies Used
 
@@ -56,30 +92,45 @@ spaCy (NLP processing)
 
 Clone the repository:
 
+```bash
 git clone https://github.com/akshitharavi43/genai-cyber-defense-copilot.git
 cd genai-cyber-defense-copilot
-
+```
 Create virtual environment:
 
+```bash
 python -m venv venv
+```
 
 Activate environment:
 
-Windows
+### Windows
+```bash
 venv\Scripts\activate
+```
+### macOS / Linux
+```bash
+source venv/bin/activate
+```
 
 Install dependencies:
 
+```bash
 pip install -r requirements.txt
-
+```
 
 ## Running the Dashboard
 
 Start the Streamlit dashboard:
 
+```bash
 streamlit run ui/dashboard.py
-Then open:
+```
+Open your browser and go to:
+
+```
 http://localhost:8501
+```
 
 
 
