@@ -25,7 +25,7 @@ Interactive Streamlit dashboard to visualize analysis results.
 
 ## Architecture
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```text
                  ┌──────────────────────┐
