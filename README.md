@@ -25,23 +25,59 @@ Interactive Streamlit dashboard to visualize analysis results.
 
 ## Architecture
 
-Logs / Configs / Alerts
-        │
-        ▼
-   Data Parsers
-        │
-        ▼
-AI Modules
-  • Posture Analyzer
-  • Malware Explainer
-  • Incident Commander
-        │
-        ▼
-Unified Reasoning Engine
-        │
-        ▼
-Streamlit SOC Dashboard
+## 🏗️ System Architecture
 
+```text
+                 ┌──────────────────────┐
+                 │   Security Inputs    │
+                 │──────────────────────│
+                 │ • System Configs     │
+                 │ • Process Logs       │
+                 │ • SIEM Alerts        │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │      Data Parsers    │
+                 │──────────────────────│
+                 │ Normalize & Extract  │
+                 │ key fields from logs │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │      AI Modules      │
+                 │──────────────────────│
+                 │ • Posture Analyzer   │
+                 │ • Malware Explainer  │
+                 │ • Incident Commander │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ Unified Reasoning AI │
+                 │──────────────────────│
+                 │ Correlates security  │
+                 │ findings to identify │
+                 │ attack root causes   │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │  Risk Scoring Engine │
+                 │──────────────────────│
+                 │ Calculates threat    │
+                 │ severity & priority  │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │  Streamlit Dashboard │
+                 │──────────────────────│
+                 │ SOC visualization    │
+                 │ investigation output │
+                 └──────────────────────┘
+```
 
 ## Technologies Used
 
